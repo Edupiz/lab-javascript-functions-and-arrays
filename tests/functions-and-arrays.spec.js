@@ -34,6 +34,10 @@ describe('Find the maximum', () => {
   });
 });
 
+
+
+
+
 describe('Find the longest word', () => {
   it('should declare a function named findLongestWord', () => {
     expect(typeof findLongestWord).toBe('function');
