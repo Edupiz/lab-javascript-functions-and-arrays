@@ -100,20 +100,30 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(element, index) {
+  let nonrepeatedWords = wordsUnique.filter((element, index) => {
+    return wordsUnique.indexOf(element) === index;
+});
+
+return nonrepeatedWords;
+}
 
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist(word) {
-if (wordFind.includes(word)) {
-  return true;
-} else {
-  return null;
-}
-}
+function doesWordExist(word) {}
+  // function findUnique(wordsArr) {
+  //   if (wordsArr.length === 0) {
+  //     return false;
+  //   }
+  
+  //   for (let i = 0; i < wordsArr.length; i++) {
+  //     const word = wordsArr[i];
+  
+  //     if (wordsArr.indexOf(word) === wordsArr.lastIndexOf(word)) {
+  //       return word;
 
 
 // Iteration #7: Count repetition
